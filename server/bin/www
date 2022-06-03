@@ -1,0 +1,9 @@
+const expressServerRunner = require('./runners/expressServer');
+const mongoDBRunner =  require('./runners/mongoDb');
+
+const start = async () => {
+    expressServerRunner();
+    mongoDBRunner();
+}
+
+start();
